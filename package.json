@@ -1,0 +1,17 @@
+{
+  "name": "wordpress-cucumber-js",
+  "version": "0.0.0",
+  "description": "WordPress e2e testing",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "git@github.com:kamataryo/boilerplate-cucumber-js-puppeteer-wordpress.git",
+  "author": "kamataryo <mugil.cephalus+ciconia.local@gmail.com>",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^5.1.0",
+    "puppeteer": "^1.13.0"
+  }
+}

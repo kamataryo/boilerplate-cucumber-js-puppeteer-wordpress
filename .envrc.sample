@@ -1,4 +1,4 @@
 export HEADLESS_MODE="true"
-export WORDPRESS_URL="https://example.com"
+export URL_BASE="https://example.com"
 export WORDPRESS_USER_LOGIN="admin"
 export WORDPRESS_USER_PASS="admin"

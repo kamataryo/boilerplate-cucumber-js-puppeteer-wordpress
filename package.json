@@ -7,11 +7,16 @@
   "repository": "git@github.com:kamataryo/boilerplate-cucumber-js-puppeteer-wordpress.git",
   "author": "kamataryo <mugil.cephalus+ciconia.local@gmail.com>",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js --require-module @babel/register"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/register": "^7.4.0",
     "chai": "^4.2.0",
     "cucumber": "^5.1.0",
     "puppeteer": "^1.13.0"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.4.2"
   }
 }

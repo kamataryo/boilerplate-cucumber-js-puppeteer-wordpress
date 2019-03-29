@@ -1,22 +1,5 @@
-const { setWorldConstructor } = require('cucumber')
-const puppeteer = require('puppeteer')
+import { setWorldConstructor, setDefaultTimeout } from 'cucumber'
+import WordPressWorld from '../../src/wordpress-world'
 
-class PuppeteerWorld {
-  constructor() {
-    this.start()
-  }
-
-  async start(headless = true) {
-    const browser = await puppeteer.launch({ headless })
-    const page = await browser.newPage()
-    this.browser = browser
-    this.page = page
-    return page
-  }
-
-  async finish() {
-    return await this.browser.close()
-  }
-}
-
-setWorldConstructor(PuppeteerWorld)
+setWorldConstructor(WordPressWorld)
+setDefaultTimeout(60 * 1000)

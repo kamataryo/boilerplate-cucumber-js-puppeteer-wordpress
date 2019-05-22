@@ -1,5 +1,4 @@
 import { setWorldConstructor, setDefaultTimeout } from 'cucumber'
-import WordPressWorld from '../../src/wordpress-world'
-
+import { WordPressWorld } from '../../src'
 setWorldConstructor(WordPressWorld)
 setDefaultTimeout(60 * 1000)

@@ -1,4 +1,4 @@
-import PuppeteerWorld from './puppeteer-world'
+import PuppeteerWorld from './puppeteer'
 
 export default class WordPressWorld extends PuppeteerWorld {
   constructor(...arg) {
